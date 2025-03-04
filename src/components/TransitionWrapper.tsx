@@ -34,11 +34,15 @@ const TransitionWrapper: React.FC<TransitionWrapperProps> = ({ children }) => {
 
   return (
     <div 
-      className={`transition-all duration-200 ease-in-out ${
-        transitionStage === "fadeIn" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-      }`}
+      className="w-full overflow-hidden"
     >
-      {displayChildren}
+      <div
+        className={`transition-opacity duration-200 ease-in-out ${
+          transitionStage === "fadeIn" ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        {displayChildren}
+      </div>
     </div>
   );
 };
