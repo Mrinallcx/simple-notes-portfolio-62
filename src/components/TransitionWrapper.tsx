@@ -26,7 +26,7 @@ const TransitionWrapper: React.FC<TransitionWrapperProps> = ({ children }) => {
       const timeout = setTimeout(() => {
         setDisplayChildren(children);
         setTransitionStage("fadeIn");
-      }, 300);
+      }, 200); // Reduced from 300ms to 200ms for faster transitions
       
       return () => clearTimeout(timeout);
     }
@@ -34,8 +34,8 @@ const TransitionWrapper: React.FC<TransitionWrapperProps> = ({ children }) => {
 
   return (
     <div 
-      className={`transition-opacity duration-300 ease-in-out ${
-        transitionStage === "fadeIn" ? "opacity-100" : "opacity-0"
+      className={`transition-all duration-200 ease-in-out ${
+        transitionStage === "fadeIn" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
       }`}
     >
       {displayChildren}
