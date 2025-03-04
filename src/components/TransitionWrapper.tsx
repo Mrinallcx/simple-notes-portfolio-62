@@ -26,19 +26,17 @@ const TransitionWrapper: React.FC<TransitionWrapperProps> = ({ children }) => {
       const timeout = setTimeout(() => {
         setDisplayChildren(children);
         setTransitionStage("fadeIn");
-      }, 200); // Reduced from 300ms to 200ms for faster transitions
+      }, 150); // Reduced time for faster transitions
       
       return () => clearTimeout(timeout);
     }
   }, [location, children, displayChildren]);
 
   return (
-    <div 
-      className="w-full overflow-hidden"
-    >
+    <div className="w-full overflow-hidden">
       <div
-        className={`transition-opacity duration-200 ease-in-out ${
-          transitionStage === "fadeIn" ? "opacity-100" : "opacity-0"
+        className={`transition-all duration-150 ease-out ${
+          transitionStage === "fadeIn" ? "opacity-100 scale-[1]" : "opacity-0 scale-[0.98]"
         }`}
       >
         {displayChildren}
