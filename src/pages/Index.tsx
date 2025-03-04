@@ -12,20 +12,20 @@ const Index = () => {
             Hello, I'm
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-slide-down" style={{ animationDelay: '200ms' }}>
-            Sanket Pathak
+            Harish Shivaraman
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl animate-slide-down" style={{ animationDelay: '300ms' }}>
-            I design and build digital products. Currently focused on creating accessible and human-centered experiences.
+            AI Researcher & Engineer specializing in computer vision and media processing technologies.
           </p>
         </div>
         
         <div className="bg-secondary/50 rounded-lg p-8 border border-border/40 animate-slide-up" style={{ animationDelay: '400ms' }}>
           <h2 className="text-2xl font-medium mb-4">About me</h2>
           <p className="text-muted-foreground mb-4">
-            I'm a designer and developer with a passion for creating clean, functional, and accessible user experiences. I believe in the power of minimalism and purposeful design to solve complex problems.
+            I'm a Senior Technical Staff member at Samsung Research America, focused on Media AI research and development. I design and implement cutting-edge AI solutions for camera and video technologies.
           </p>
           <p className="text-muted-foreground">
-            When I'm not designing or coding, you can find me reading books, exploring photography, or hiking in the mountains.
+            With a background in computer vision, deep learning, and signal processing, I'm passionate about pushing the boundaries of AI in consumer electronics and multimedia applications.
           </p>
         </div>
         
@@ -33,14 +33,14 @@ const Index = () => {
           <h2 className="text-2xl font-medium mb-6">Featured Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-              <h3 className="text-xl font-medium mb-2">Design System</h3>
-              <p className="text-muted-foreground mb-4">A comprehensive design system for building consistent and accessible user interfaces.</p>
-              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View project →</Link>
+              <h3 className="text-xl font-medium mb-2">Camera AI Systems</h3>
+              <p className="text-muted-foreground mb-4">Research and development of AI-based camera systems for next-generation mobile devices and advanced image processing.</p>
+              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View projects →</Link>
             </div>
             <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-              <h3 className="text-xl font-medium mb-2">Photography Portfolio</h3>
-              <p className="text-muted-foreground mb-4">An elegant portfolio website showcasing landscape and architectural photography.</p>
-              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View project →</Link>
+              <h3 className="text-xl font-medium mb-2">Computer Vision Research</h3>
+              <p className="text-muted-foreground mb-4">Publications and patents in the field of computer vision, focusing on real-time processing for embedded systems.</p>
+              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View research →</Link>
             </div>
           </div>
         </div>
@@ -51,13 +51,13 @@ const Index = () => {
             <Link to="/blog" className="block group">
               <article className="p-6 rounded-md border border-border/40 bg-card card-hover">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs text-muted-foreground">May 15, 2023</span>
-                  <span className="text-xs text-muted-foreground">5 min read</span>
+                  <span className="text-xs text-muted-foreground">June 12, 2023</span>
+                  <span className="text-xs text-muted-foreground">7 min read</span>
                 </div>
                 <h3 className="text-xl font-medium mb-2 group-hover:text-primary/80 transition-colors duration-200">
-                  The Principles of Minimalist Design
+                  Advancements in Mobile AI for Camera Systems
                 </h3>
-                <p className="text-muted-foreground">An exploration of minimalist design principles and how they can be applied to create more effective digital products.</p>
+                <p className="text-muted-foreground">Exploring the latest developments in on-device AI for camera systems and how they're revolutionizing mobile photography and video capture.</p>
               </article>
             </Link>
           </div>

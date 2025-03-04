@@ -12,7 +12,15 @@ const TransitionWrapper: React.FC<TransitionWrapperProps> = ({ children }) => {
   const [transitionStage, setTransitionStage] = useState("fadeIn");
 
   useEffect(() => {
-    if (location.pathname !== displayChildren.props.location?.pathname) {
+    // Check if we need to update the children due to location change
+    // We need to safely check if children is a React element with props
+    const childrenElement = React.isValidElement(children) ? children : null;
+    const displayChildrenElement = React.isValidElement(displayChildren) ? displayChildren : null;
+    
+    const childrenPath = childrenElement?.props?.location?.pathname;
+    const displayChildrenPath = displayChildrenElement?.props?.location?.pathname;
+    
+    if (childrenPath && displayChildrenPath && childrenPath !== displayChildrenPath) {
       setTransitionStage("fadeOut");
       
       const timeout = setTimeout(() => {
@@ -22,7 +30,7 @@ const TransitionWrapper: React.FC<TransitionWrapperProps> = ({ children }) => {
       
       return () => clearTimeout(timeout);
     }
-  }, [location, children, displayChildren.props.location?.pathname]);
+  }, [location, children, displayChildren]);
 
   return (
     <div 
