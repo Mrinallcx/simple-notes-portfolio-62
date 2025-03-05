@@ -1,6 +1,10 @@
+
 import React from "react";
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
 const Index = () => {
   return <Layout>
       <section className="space-y-8 animate-fade-in">
@@ -45,6 +49,29 @@ const Index = () => {
               <p className="text-muted-foreground mb-4">Publications and patents in the field of computer vision, focusing on real-time processing for embedded systems.</p>
               <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View research →</Link>
             </div>
+            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+              <h3 className="text-xl font-medium mb-2">Edge AI Processing</h3>
+              <p className="text-muted-foreground mb-4">Optimization techniques for running complex AI models on resource-constrained edge devices with minimal latency.</p>
+              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View case study →</Link>
+            </div>
+            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+              <h3 className="text-xl font-medium mb-2">Media Enhancement</h3>
+              <p className="text-muted-foreground mb-4">Advanced algorithms for noise reduction, super-resolution, and color enhancement in digital photography and videography.</p>
+              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View details →</Link>
+            </div>
+            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+              <h3 className="text-xl font-medium mb-2">Neural Networks for Mobile</h3>
+              <p className="text-muted-foreground mb-4">Custom architectures designed specifically for mobile devices, balancing performance with power consumption.</p>
+              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">Learn more →</Link>
+            </div>
+          </div>
+          <div className="mt-6 text-center">
+            <Button variant="outline" asChild className="gap-2">
+              <Link to="/portfolio">
+                View all work
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
         
