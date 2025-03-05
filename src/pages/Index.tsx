@@ -1,9 +1,9 @@
-
 import React from "react";
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import BlogCard from "@/components/BlogCard";
 
 const Index = () => {
   return <Layout>
@@ -80,18 +80,45 @@ const Index = () => {
       }}>
           <h2 className="text-2xl font-medium mb-6">Latest Writing</h2>
           <div className="grid grid-cols-1 gap-6">
-            <Link to="/blog" className="block group">
-              <article className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs text-muted-foreground">June 12, 2023</span>
-                  <span className="text-xs text-muted-foreground">7 min read</span>
-                </div>
-                <h3 className="text-xl font-medium mb-2 group-hover:text-primary/80 transition-colors duration-200">
-                  Advancements in Mobile AI for Camera Systems
-                </h3>
-                <p className="text-muted-foreground">Exploring the latest developments in on-device AI for camera systems and how they're revolutionizing mobile photography and video capture.</p>
-              </article>
-            </Link>
+            <BlogCard 
+              title="Advancements in Mobile AI for Camera Systems"
+              excerpt="Exploring the latest developments in on-device AI for camera systems and how they're revolutionizing mobile photography and video capture."
+              date="June 12, 2023"
+              readTime="7 min read"
+              slug="mobile-ai-camera-systems"
+            />
+            
+            <BlogCard 
+              title="Optimizing Neural Networks for Edge Devices"
+              excerpt="A deep dive into techniques for making complex neural networks run efficiently on resource-constrained mobile and IoT devices."
+              date="May 22, 2023"
+              readTime="9 min read"
+              slug="optimizing-neural-networks-edge"
+            />
+            
+            <BlogCard 
+              title="The Future of Computer Vision in Consumer Electronics"
+              excerpt="How emerging computer vision technologies will transform everyday devices and create new possibilities for human-computer interaction."
+              date="April 18, 2023"
+              readTime="6 min read"
+              slug="future-computer-vision-consumer-electronics"
+            />
+            
+            <BlogCard 
+              title="Balancing AI Capability and Privacy in Camera Systems"
+              excerpt="Examining the ethical considerations and technical approaches to implementing powerful AI features while respecting user privacy."
+              date="March 5, 2023"
+              readTime="8 min read"
+              slug="ai-privacy-balance-cameras"
+            />
+          </div>
+          <div className="mt-6 text-center">
+            <Button variant="outline" asChild className="gap-2">
+              <Link to="/blog">
+                View all articles
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
