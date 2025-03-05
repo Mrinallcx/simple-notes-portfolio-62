@@ -65,14 +65,6 @@ const Index = () => {
               <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">Learn more →</Link>
             </div>
           </div>
-          <div className="mt-6 text-center">
-            <Button variant="outline" asChild className="gap-2">
-              <Link to="/portfolio">
-                View all work
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
         </div>
         
         <div className="pt-8 animate-slide-up" style={{
