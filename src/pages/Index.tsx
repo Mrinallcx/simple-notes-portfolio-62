@@ -15,9 +15,7 @@ const Index = () => {
         }}>Mrinal Chakraborty</h1>
           <p className="text-xl text-muted-foreground max-w-2xl animate-slide-down" style={{
           animationDelay: '300ms'
-        }}>
-            AI Researcher & Engineer specializing in computer vision and media processing technologies.
-          </p>
+        }}>UX Designer &amp; AI Explorer crafting intuitive, dynamic, and human-centered digital experiences.</p>
         </div>
         
         <div className="bg-secondary/50 rounded-lg p-8 border border-border/40 animate-slide-up" style={{
