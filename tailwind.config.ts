@@ -71,7 +71,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				serif: ['Playfair Display', 'serif']
+				serif: ['"Timesnew Fallback"', 'Times New Roman', 'serif'],
 			},
 			keyframes: {
 				'accordion-down': {
