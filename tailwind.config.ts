@@ -73,6 +73,9 @@ export default {
 				sans: ['Inter', 'sans-serif'],
 				serif: ['"Timesnew Fallback"', 'Times New Roman', 'serif'],
 			},
+			boxShadow: {
+				'dark-glow': '0 4px 20px -2px rgba(156, 139, 253, 0.2)',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },
