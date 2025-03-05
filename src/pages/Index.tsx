@@ -1,25 +1,28 @@
-
 import React from "react";
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
-
 const Index = () => {
-  return (
-    <Layout>
+  return <Layout>
       <section className="space-y-8 animate-fade-in">
         <div className="py-12 md:py-20">
-          <span className="text-sm font-medium text-muted-foreground mb-2 block animate-slide-down" style={{ animationDelay: '100ms' }}>
+          <span className="text-sm font-medium text-muted-foreground mb-2 block animate-slide-down" style={{
+          animationDelay: '100ms'
+        }}>
             Hello, I'm
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-slide-down" style={{ animationDelay: '200ms' }}>
-            Harish Shivaraman
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl animate-slide-down" style={{ animationDelay: '300ms' }}>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-slide-down" style={{
+          animationDelay: '200ms'
+        }}>Mrinal Chakraborty</h1>
+          <p className="text-xl text-muted-foreground max-w-2xl animate-slide-down" style={{
+          animationDelay: '300ms'
+        }}>
             AI Researcher & Engineer specializing in computer vision and media processing technologies.
           </p>
         </div>
         
-        <div className="bg-secondary/50 rounded-lg p-8 border border-border/40 animate-slide-up" style={{ animationDelay: '400ms' }}>
+        <div className="bg-secondary/50 rounded-lg p-8 border border-border/40 animate-slide-up" style={{
+        animationDelay: '400ms'
+      }}>
           <h2 className="text-2xl font-medium mb-4">About me</h2>
           <p className="text-muted-foreground mb-4">
             I'm a Senior Technical Staff member at Samsung Research America, focused on Media AI research and development. I design and implement cutting-edge AI solutions for camera and video technologies.
@@ -29,7 +32,9 @@ const Index = () => {
           </p>
         </div>
         
-        <div className="pt-8 animate-slide-up" style={{ animationDelay: '500ms' }}>
+        <div className="pt-8 animate-slide-up" style={{
+        animationDelay: '500ms'
+      }}>
           <h2 className="text-2xl font-medium mb-6">Featured Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
@@ -45,7 +50,9 @@ const Index = () => {
           </div>
         </div>
         
-        <div className="pt-8 animate-slide-up" style={{ animationDelay: '600ms' }}>
+        <div className="pt-8 animate-slide-up" style={{
+        animationDelay: '600ms'
+      }}>
           <h2 className="text-2xl font-medium mb-6">Latest Writing</h2>
           <div className="grid grid-cols-1 gap-6">
             <Link to="/blog" className="block group">
@@ -63,8 +70,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Index;
