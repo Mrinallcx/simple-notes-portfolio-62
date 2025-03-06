@@ -2,7 +2,6 @@
 import type { Config } from "tailwindcss";
 
 export default {
-	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -72,9 +71,6 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				serif: ['"Timesnew Fallback"', 'Times New Roman', 'serif'],
-			},
-			boxShadow: {
-				'dark-glow': '0 4px 20px -2px rgba(156, 139, 253, 0.2)',
 			},
 			keyframes: {
 				'accordion-down': {

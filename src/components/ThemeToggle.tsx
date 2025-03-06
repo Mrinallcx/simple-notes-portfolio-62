@@ -1,47 +1,19 @@
 
-import React, { useEffect, useState } from "react";
-import { Moon, Sun } from "lucide-react";
+import React from "react";
+import { Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ThemeToggle: React.FC = () => {
-  const [theme, setTheme] = useState(() => {
-    // Check for stored theme preference or system preference
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") || 
-        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    }
-    return "light";
-  });
-
-  useEffect(() => {
-    const root = window.document.documentElement;
-    
-    if (theme === "dark") {
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
+  // Light mode only - component kept for layout consistency
   return (
     <Button 
       variant="ghost" 
       size="icon" 
-      onClick={toggleTheme}
-      aria-label="Toggle theme"
-      className="rounded-full w-8 h-8 transition-colors duration-300 hover:bg-accent"
+      aria-label="Light mode"
+      className="rounded-full w-8 h-8 cursor-default"
+      disabled
     >
-      {theme === "dark" ? (
-        <Sun className="h-4 w-4 text-primary" />
-      ) : (
-        <Moon className="h-4 w-4" />
-      )}
+      <Sun className="h-4 w-4" />
     </Button>
   );
 };
