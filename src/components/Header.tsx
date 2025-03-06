@@ -78,59 +78,47 @@ const Header: React.FC = () => {
           size="icon"
           className="md:hidden"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </Button>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="absolute top-full left-0 right-0 bg-background border-b border-border/40 md:hidden animate-fade-in">
-            <nav className="max-w-4xl mx-auto px-4 py-4">
-              <ul className="flex flex-col space-y-4">
-                <li>
+        <div 
+          className={`absolute top-full left-0 right-0 bg-background border-b border-border/40 md:hidden transform transition-all duration-300 ease-in-out ${
+            isOpen 
+              ? "opacity-100 translate-y-0 shadow-md" 
+              : "opacity-0 -translate-y-2 pointer-events-none"
+          }`}
+        >
+          <nav className="max-w-4xl mx-auto px-4 py-6">
+            <ul className="flex flex-col space-y-6">
+              {[
+                { path: "/", label: "Home" },
+                { path: "/blog", label: "Blog" },
+                { path: "/notes", label: "Notes" },
+                { path: "/portfolio", label: "Portfolio" },
+                { path: "/resume", label: "Resume" },
+              ].map((item, index) => (
+                <li key={item.path} className={`transform transition-all duration-300 delay-${index * 75}`}>
                   <Link 
-                    to="/" 
-                    className={`block py-2 ${isActive("/") ? "text-foreground" : "text-foreground/80"}`}
+                    to={item.path} 
+                    className={`block py-2 text-lg font-medium relative ${
+                      isActive(item.path) 
+                        ? "text-foreground" 
+                        : "text-foreground/70 hover:text-foreground"
+                    }`}
                   >
-                    Home
+                    {item.label}
+                    <span className={`absolute bottom-0 left-0 w-0 h-0.5 bg-foreground transition-all duration-300 ${
+                      isActive(item.path) ? "w-8" : "group-hover:w-8"
+                    }`} />
                   </Link>
                 </li>
-                <li>
-                  <Link 
-                    to="/blog" 
-                    className={`block py-2 ${isActive("/blog") ? "text-foreground" : "text-foreground/80"}`}
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/notes" 
-                    className={`block py-2 ${isActive("/notes") ? "text-foreground" : "text-foreground/80"}`}
-                  >
-                    Notes
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/portfolio" 
-                    className={`block py-2 ${isActive("/portfolio") ? "text-foreground" : "text-foreground/80"}`}
-                  >
-                    Portfolio
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/resume" 
-                    className={`block py-2 ${isActive("/resume") ? "text-foreground" : "text-foreground/80"}`}
-                  >
-                    Resume
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        )}
+              ))}
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   );
