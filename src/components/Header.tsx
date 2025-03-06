@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
 
 const Header: React.FC = () => {
   const location = useLocation();
@@ -34,7 +33,7 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <nav className="flex items-center">
-          <ul className="flex items-center space-x-6 md:space-x-10 mr-4">
+          <ul className="flex items-center space-x-6 md:space-x-10">
             <li>
               <Link 
                 to="/" 
@@ -76,7 +75,6 @@ const Header: React.FC = () => {
               </Link>
             </li>
           </ul>
-          <ThemeToggle />
         </nav>
       </div>
     </header>
