@@ -92,7 +92,7 @@ const Index = () => {
         <div className="pt-8 animate-slide-up" style={{
         animationDelay: '440ms'
       }}>
-          <h2 className="text-2xl font-serif font-medium mb-6">Self Developed</h2>
+          <h2 className="text-2xl font-serif font-medium mb-6">Personal Project</h2>
           <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
             <div className="flex md:contents overflow-x-auto md:overflow-visible gap-4 md:gap-0 pb-4 md:pb-0 scrollbar-hide">
               <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
