@@ -69,8 +69,8 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				serif: ['"Timesnew Fallback"', 'Times New Roman', 'serif'],
+				sans: ['Poppins', 'sans-serif'],
+				serif: ['Syne', 'serif'],
 			},
 			keyframes: {
 				'accordion-down': {

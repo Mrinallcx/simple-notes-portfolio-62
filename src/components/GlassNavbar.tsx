@@ -1,0 +1,17 @@
+import React from "react";
+
+const GlassNavbar: React.FC = () => {
+  return (
+    <nav
+      className="fixed bottom-0 left-0 w-full h-14 z-50 backdrop-blur-md bg-white/30 dark:bg-black/20 shadow-lg"
+      style={{
+        WebkitBackdropFilter: 'blur(12px)',
+        backdropFilter: 'blur(12px)',
+      }}
+    >
+      {/* Empty glassmorphism navbar */}
+    </nav>
+  );
+};
+
+export default GlassNavbar; 
