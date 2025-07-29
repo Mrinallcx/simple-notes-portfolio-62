@@ -32,8 +32,8 @@ const Index = () => {
           animationDelay: '350ms',
           backgroundColor: 'rgba(185, 178, 98, 0.3)'
         }}>
-            <p className="text-yellow-600 text-xs font-medium px-2 py-1">
-              <strong>N.B:</strong> I am not from NID, IIT or any tier 1 college, I can bring only experience and knowledge on the table.
+            <p className="text-white text-xs font-medium px-2 py-1">
+              <strong>N.B:</strong> Do not hire me if you are looking for certified designers. I can bring only experience and knowledge on the table.
             </p>
           </div>
           
@@ -101,7 +101,7 @@ const Index = () => {
                     <h3 className="text-lg font-serif font-medium">Focusedtube</h3>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                   </div>
-                  <p className="text-muted-foreground text-sm">Distraction-free YouTube experience with enhanced focus features and productivity tools.</p>
+                  <p className="text-muted-foreground text-sm">Distraction-free YouTube experience with enhanced focus features.</p>
                 </div>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
@@ -116,46 +116,10 @@ const Index = () => {
               <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
                 <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-serif font-medium">Reddit Co-pilot</h3>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">AI-powered Reddit assistant for content discovery and community engagement.</p>
-                </div>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-                <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-serif font-medium">X Co-pilot</h3>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">Twitter/X platform assistant for content creation and social media management.</p>
-                </div>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-                <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-serif font-medium">Finance Analytics</h3>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">Comprehensive financial analysis platform with data visualization and insights.</p>
-                </div>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-                <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                  <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-serif font-medium">Crypto Search Engine</h3>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                   </div>
                   <p className="text-muted-foreground text-sm">Specialized search engine for cryptocurrency information and market data.</p>
-                </div>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-                <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-serif font-medium">Dex Explorer</h3>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">Decentralized exchange explorer for tracking trades and market analysis.</p>
                 </div>
               </a>
             </div>
@@ -302,11 +266,14 @@ const Index = () => {
       }}>
           <h2 className="text-2xl font-serif font-medium mb-6">Case Studies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a href="https://drive.google.com/file/d/1qNsU9b82lmu5XXbYJWkj3072kRK_QEo4/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block group">
             <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-              <h3 className="text-xl font-serif font-medium mb-2">Camera AI Systems</h3>
-              <p className="text-muted-foreground mb-4">Research and development of AI-based camera systems for next-generation mobile devices and advanced image processing.</p>
-              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View projects →</Link>
+                <h3 className="text-xl font-serif font-medium mb-2">AI Powered Financial Search</h3>
+                <p className="text-muted-foreground mb-4">Building trustworthy AI in finance demands more than algorithmic accuracy—it requires
+explainable interactions that balance power, clarity, and compliance.</p>
+                <div className="text-primary/80 group-hover:text-primary font-medium text-sm">My thoughts →</div>
             </div>
+            </a>
             <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
               <h3 className="text-xl font-serif font-medium mb-2">Computer Vision Research</h3>
               <p className="text-muted-foreground mb-4">Publications and patents in the field of computer vision, focusing on real-time processing for embedded systems.</p>

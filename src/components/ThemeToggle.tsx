@@ -8,14 +8,14 @@ const ThemeToggle: React.FC = () => {
 
   return (
     <div className="flex gap-1">
-      <Button
+    <Button 
         variant={theme === "light" ? "default" : "ghost"}
-        size="icon"
-        aria-label="Light mode"
+      size="icon" 
+      aria-label="Light mode"
         onClick={() => setTheme("light")}
-      >
-        <Sun className="h-4 w-4" />
-      </Button>
+    >
+      <Sun className="h-4 w-4" />
+    </Button>
       <Button
         variant={theme === "dark" ? "default" : "ghost"}
         size="icon"
