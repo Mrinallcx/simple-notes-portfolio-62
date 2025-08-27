@@ -101,7 +101,7 @@ const Index = () => {
                     <h2 className="text-2xl font-serif font-medium mb-6">Live Projects</h2>
           <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
             <div className="flex md:contents overflow-x-auto md:overflow-visible gap-4 md:gap-0 pb-4 md:pb-0 scrollbar-hide">
-              <a href="https://exchange.lcx.com/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
+            {/* <a href="https://exchange.lcx.com/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
               <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-lg font-serif font-medium">LCX</h3>
@@ -109,7 +109,7 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground text-sm">Cryptocurrency exchange platform with advanced trading features and security.</p>
               </div>
-            </a>
+            </a> */}
             <a href="https://app.tiamonds.com/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
               <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                 <div className="flex items-center justify-between mb-2">
@@ -173,7 +173,7 @@ const Index = () => {
                 <p className="text-muted-foreground text-sm">DeFi application offering innovative financial products and services.</p>
               </div>
             </a>
-            <a href="https://masterdex.app/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
+            {/* <a href="https://masterdex.app/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
               <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-lg font-serif font-medium">Masterdex</h3>
@@ -181,7 +181,7 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground text-sm">Decentralized exchange platform for seamless crypto trading.</p>
               </div>
-            </a>
+            </a> */}
             </div>
           </div>
         </div>
