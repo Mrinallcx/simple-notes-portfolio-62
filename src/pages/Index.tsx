@@ -18,7 +18,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4 animate-slide-down" style={{
           animationDelay: '200ms'
         }}>Mrinal Chakraborty</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl animate-slide-down" style={{
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl animate-slide-down" style={{
           animationDelay: '300ms'
         }}>
             UX Design @LCX | Web3.0 | 5 Years of Product Design | AI Enthusiast | Applied AI Engineer
@@ -37,41 +37,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="mt-4 flex items-center space-x-3 animate-slide-down" style={{
-          animationDelay: '400ms'
-        }}>
-            <a 
-              href="https://twitter.com/yourusername" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-purple-500 transition-colors duration-200"
-            >
-              <Twitter className="h-5 w-5" />
-            </a>
-            <a 
-              href="https://linkedin.com/in/yourusername" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-purple-500 transition-colors duration-200"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a 
-              href="https://t.me/yourusername" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-purple-500 transition-colors duration-200"
-            >
-              <Send className="h-5 w-5" />
-            </a>
-            <a 
-              href="/nft-gallery" 
-              className="text-muted-foreground hover:text-purple-500 transition-colors duration-200 flex items-center space-x-1"
-            >
-              <span className="text-sm font-medium">NFT Gallery</span>
-              <ArrowRight className="h-4 w-4" />
-            </a>
-          </div>
+        
         </div>
         
         <div className="bg-secondary/50 rounded-lg p-8 border border-border/40 animate-slide-up" style={{
@@ -82,7 +48,7 @@ const Index = () => {
             I’m a UX designer with 5 years of experience, including 3.5+ years focused on product design. Since 2019, I’ve completed 30+ production grade projects, combining design thinking with a “jugadu” mindset to solve real problems.
           </p>
           <p className="text-muted-foreground mb-4">
-            I also have hands-on experience with WordPress, Joomla, Magento, Shopify, Webflow, and Framer for development. For design, I use Figma and the Adobe Suite (Photoshop, Illustrator, After Effects, Premiere Pro).
+            I also have hands-on experience with Lovable, Cursor, Bolt.new, Shopify, Webflow, and Framer for development. For design, I use Figma and the Adobe Creative Suite.
           </p>
           <p className="text-muted-foreground">
             Day to day, I rely on tools like MidJourney, GPT, Bard, Copilot, and a lot of coffee. Still improving my communication and client-handling skills, but always learning and building.
@@ -101,7 +67,8 @@ const Index = () => {
                     <h3 className="text-lg font-serif font-medium">Focusedtube</h3>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                   </div>
-                  <p className="text-muted-foreground text-sm">Distraction-free YouTube experience with enhanced focus features.</p>
+                  <p className="text-muted-foreground text-sm mb-3">Distraction-free YouTube experience with enhanced focus features.</p>
+                  
                 </div>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
@@ -110,7 +77,8 @@ const Index = () => {
                     <h3 className="text-lg font-serif font-medium">Mind Reset</h3>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                   </div>
-                  <p className="text-muted-foreground text-sm">Mental wellness app for mindfulness, meditation, and cognitive reset techniques.</p>
+                  <p className="text-muted-foreground text-sm mb-3">Mental wellness app for mindfulness, meditation, and cognitive reset techniques.</p>
+                  
                 </div>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
@@ -119,7 +87,8 @@ const Index = () => {
                     <h3 className="text-lg font-serif font-medium">Crypto Search Engine</h3>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                   </div>
-                  <p className="text-muted-foreground text-sm">Specialized search engine for cryptocurrency information and market data.</p>
+                  <p className="text-muted-foreground text-sm mb-3">Specialized search engine for cryptocurrency information and market data.</p>
+                  
                 </div>
               </a>
             </div>
@@ -221,43 +190,41 @@ const Index = () => {
         animationDelay: '480ms'
       }}>
           <h2 className="text-2xl font-serif font-medium mb-6">Skills & Expertise</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-md border border-border/40 bg-card">
-              <h3 className="text-lg font-serif font-medium mb-4 text-purple-500">Design</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>UX/UI Design</li>
-                <li>Information Architecture</li>
-                <li>Interaction Design</li>
-                <li>Design Systems</li>
-                <li>Component Libraries</li>
-                <li>Responsive Design</li>
-              </ul>
-            </div>
-            <div className="p-6 rounded-md border border-border/40 bg-card">
-              <h3 className="text-lg font-serif font-medium mb-4 text-purple-500">Research</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>User Research & Analysis</li>
-                <li>Usability Testing</li>
-                <li>A/B Testing</li>
-                <li>Journey Mapping</li>
-                <li>Heuristic Evaluation</li>
-                <li>Design Thinking</li>
-                <li>Agile UX</li>
-              </ul>
-            </div>
-            <div className="p-6 rounded-md border border-border/40 bg-card">
-              <h3 className="text-lg font-serif font-medium mb-4 text-purple-500">Tools</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>n8n, make</li>
-                <li>Bolt</li>
-                <li>Lovable</li>
-                <li>Figma (Advanced)</li>
-                <li>Adobe XD</li>
-                <li>Sketch</li>
-                <li>Zeplin</li>
-                <li>Miro</li>
-              </ul>
-            </div>
+          <div className="flex flex-wrap gap-2">
+            {[
+              // Design
+              'UX/UI Design',
+              'Information Architecture',
+              'Interaction Design',
+              'Design Systems',
+              'Component Libraries',
+              'Responsive Design',
+              // Research
+              'User Research & Analysis',
+              'Usability Testing',
+              'A/B Testing',
+              'Journey Mapping',
+              'Heuristic Evaluation',
+              'Design Thinking',
+              'Agile UX',
+              // Tools
+              'n8n',
+              'Make',
+              'Bolt',
+              'Lovable',
+              'Figma (Advanced)',
+              'Adobe XD',
+              'Sketch',
+              'Zeplin',
+              'Miro',
+              // Added per request
+              'Agile Method',
+              'Jira'
+            ].map((skill) => (
+              <span key={skill} className="text-xs md:text-sm px-3 py-1 rounded-full border border-border/60 bg-secondary/40 text-foreground/80">
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
         
@@ -266,76 +233,56 @@ const Index = () => {
       }}>
           <h2 className="text-2xl font-serif font-medium mb-6">Case Studies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <a href="https://drive.google.com/file/d/1qNsU9b82lmu5XXbYJWkj3072kRK_QEo4/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block group">
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                <h3 className="text-xl font-serif font-medium mb-2">AI Powered Financial Search</h3>
-                <p className="text-muted-foreground mb-4">Building trustworthy AI in finance demands more than algorithmic accuracy—it requires
-explainable interactions that balance power, clarity, and compliance.</p>
-                <div className="text-primary/80 group-hover:text-primary font-medium text-sm">My thoughts →</div>
-            </div>
-            </a>
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-              <h3 className="text-xl font-serif font-medium mb-2">Computer Vision Research</h3>
-              <p className="text-muted-foreground mb-4">Publications and patents in the field of computer vision, focusing on real-time processing for embedded systems.</p>
-              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View research →</Link>
-            </div>
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-              <h3 className="text-xl font-serif font-medium mb-2">Edge AI Processing</h3>
-              <p className="text-muted-foreground mb-4">Optimization techniques for running complex AI models on resource-constrained edge devices with minimal latency.</p>
-              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View case study →</Link>
-            </div>
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-              <h3 className="text-xl font-serif font-medium mb-2">Media Enhancement</h3>
-              <p className="text-muted-foreground mb-4">Advanced algorithms for noise reduction, super-resolution, and color enhancement in digital photography and videography.</p>
-              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">View details →</Link>
-            </div>
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-              <h3 className="text-xl font-serif font-medium mb-2">Neural Networks for Mobile</h3>
-              <p className="text-muted-foreground mb-4">Custom architectures designed specifically for mobile devices, balancing performance with power consumption.</p>
-              <Link to="/portfolio" className="text-primary/80 hover:text-primary font-medium text-sm">Learn more →</Link>
-            </div>
+            {[
+              {
+                title: "Chat with Your Crypto: Voice-Activated, Multilingual UX for India’s Newest Investors",
+                desc: "India’s next billion digital users are arriving online via low-cost smartphones, patchy data, and 22 official languages. Speech AI––already powering..."
+              },
+              {
+                title: "Crypto Anxiety to Crypto Zen: Emotion-Aware UX for First-Time Investors",
+                desc: "The cryptocurrency market's extreme volatility creates a perfect storm of emotional turbulence for first-time investors. While traditional..."
+              },
+              {
+                title: "Frictionless Futures: Predictive Onboarding and the Vanishing Crypto UI",
+                desc: "Over the next decade, a decisive share of Web3 adoption will be won or lost in the first 60 seconds of a user’s journey. Modern wallets..."
+              },
+              {
+                title: "Frictionless KYC: Designing Instant, AI-Powered Digital Onboarding for the Unbanked",
+                desc: "More than 1.3 billion adults worldwide remain outside the formal financial system despite recordhigh account ownership..."
+              },
+              {
+                title: "AI-Generated Deepfakes and Revenge Porn: The Emerging Threat",
+                desc: "The emergence of AI-generated deepfakes represents one of the most insidious technological threats of the digital age..."
+              },
+              {
+                title: "Hype to Hand: How AI News Sentiment Moves Wallets Instantly",
+                desc: "The cryptocurrency trading landscape has undergone a seismic transformation as artificial intelligence systems begin intercepting..."
+              },
+              {
+                title: "Invisible Intelligence: Will Autonomous AI Agents Make Crypto Self-Driving?",
+                desc: "AI agents are rapidly evolving from passive chatbots into on-chain copilots that execute trades, rebalance portfolios, police scams and even..."
+              },
+              {
+                title: "The Influence of Personalization on User Experience in News Apps",
+                desc: "Personalized news applications have fundamentally transformed how users consume information, creating a complex..."
+              },
+              {
+                title: "Token of Inclusion: AI-Driven UX for Financial Access Among the Unbanked",
+                desc: "Financial inclusion remains a pressing global challenge: 1.4 billion adults still lack a formal account..."
+              }
+            ].map((item) => (
+              <div key={item.title} className="p-6 rounded-md border border-border/40 bg-card card-hover group relative">
+                <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Coming soon</span>
+                <h3 className="text-xl font-serif font-medium mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm">{item.desc}</p>
+                <div className="mt-4 flex justify-end">
+                  <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         
-        <div className="pt-8 animate-slide-up" style={{
-        animationDelay: '600ms'
-      }}>
-          <h2 className="text-2xl font-serif font-medium mb-6">Latest Writing</h2>
-          <div className="grid grid-cols-1 gap-6">
-            <BlogCard 
-              title="Advancements in Mobile AI for Camera Systems"
-              excerpt="Exploring the latest developments in on-device AI for camera systems and how they're revolutionizing mobile photography and video capture."
-              date="June 12, 2023"
-              readTime="7 min read"
-              slug="mobile-ai-camera-systems"
-            />
-            
-            <BlogCard 
-              title="Optimizing Neural Networks for Edge Devices"
-              excerpt="A deep dive into techniques for making complex neural networks run efficiently on resource-constrained mobile and IoT devices."
-              date="May 22, 2023"
-              readTime="9 min read"
-              slug="optimizing-neural-networks-edge"
-            />
-            
-            <BlogCard 
-              title="The Future of Computer Vision in Consumer Electronics"
-              excerpt="How emerging computer vision technologies will transform everyday devices and create new possibilities for human-computer interaction."
-              date="April 18, 2023"
-              readTime="6 min read"
-              slug="future-computer-vision-consumer-electronics"
-            />
-            
-            <BlogCard 
-              title="Balancing AI Capability and Privacy in Camera Systems"
-              excerpt="Examining the ethical considerations and technical approaches to implementing powerful AI features while respecting user privacy."
-              date="March 5, 2023"
-              readTime="8 min read"
-              slug="ai-privacy-balance-cameras"
-            />
-          </div>
-
-        </div>
       </section>
     </Layout>;
 };

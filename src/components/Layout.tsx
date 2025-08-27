@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-[80vh] flex flex-col">
       <Header />
       <main className="flex-1 w-full max-w-4xl mx-auto px-4 py-8 md:py-16">
         <TransitionWrapper>{children}</TransitionWrapper>
