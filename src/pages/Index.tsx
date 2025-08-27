@@ -68,6 +68,11 @@ const Index = () => {
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                   </div>
                   <p className="text-muted-foreground text-sm mb-3">Distraction-free YouTube experience with enhanced focus features.</p>
+                  <div className="flex flex-wrap gap-1 mt-1">
+                    {['Lovable', 'Bolt', 'Cursor', 'Vercel'].map((tag) => (
+                      <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                    ))}
+                  </div>
                   
                 </div>
               </a>
@@ -78,6 +83,11 @@ const Index = () => {
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                   </div>
                   <p className="text-muted-foreground text-sm mb-3">Mental wellness app for mindfulness, meditation, and cognitive reset techniques.</p>
+                  <div className="flex flex-wrap gap-1 mt-1">
+                    {['Lovable', 'Netlify'].map((tag) => (
+                      <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                    ))}
+                  </div>
                   
                 </div>
               </a>
@@ -88,6 +98,11 @@ const Index = () => {
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                   </div>
                   <p className="text-muted-foreground text-sm mb-3">Specialized search engine for cryptocurrency information and market data.</p>
+                  <div className="flex flex-wrap gap-1 mt-1">
+                    {['Cursor', 'Vercel'].map((tag) => (
+                      <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                    ))}
+                  </div>
                   
                 </div>
               </a>
