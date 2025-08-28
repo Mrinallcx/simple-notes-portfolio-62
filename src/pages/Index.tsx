@@ -21,7 +21,7 @@ const Index = () => {
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl animate-slide-down" style={{
           animationDelay: '300ms'
         }}>
-            UX Design @LCX | Web3.0 | 5 Years of Product Design | AI Enthusiast | Applied AI Engineer
+            UX Designer @LCX | Web3.0 | 5 Years of Product Design | Applied AI Engineer
           </p>
           <p className="text-sm text-[#a0a0a0] mt-4 animate-slide-down" style={{ animationDelay: '320ms' }}>
             Call: <a href="tel:+918811837252" className="hover:text-purple-500 transition-colors duration-200">+91 8811837252</a><br />
@@ -33,7 +33,7 @@ const Index = () => {
           backgroundColor: 'rgba(185, 178, 98, 0.3)'
         }}>
             <p className="text-white text-xs font-medium px-2 py-1">
-              <strong>N.B:</strong> Do not hire me if you are looking for certified designers. I can bring only experience and knowledge on the table.
+              <strong>N.B:</strong> I bring real-world experience and knowledge over certifications.
             </p>
           </div>
           
