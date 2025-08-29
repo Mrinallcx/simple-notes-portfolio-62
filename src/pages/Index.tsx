@@ -33,11 +33,38 @@ const Index = () => {
           backgroundColor: 'rgba(185, 178, 98, 0.3)'
         }}>
             <p className="text-white text-xs font-medium px-2 py-1">
-              <strong>N.B:</strong> I bring real-world experience and knowledge over certifications.
+              <strong>N.B:</strong> Do not hire me if you are looking for certified designers. I can bring only experience and knowledge on the table.
             </p>
           </div>
+          <div className="mt-2 flex items-center gap-4">
+            <a 
+              href="https://www.linkedin.com/in/yourusername" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-white/5 text-foreground/80"
+            >
+              <img 
+                src="/linkeidn.svg" 
+                alt="LinkedIn" 
+                className="h-4 w-4"
+              />
+            </a>
+            <a 
+              href="https://x.com/yourusername" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="X (Twitter)"
+              className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-white/5 text-foreground/80"
+            >
+              <img 
+                src="/x.svg" 
+                alt="X" 
+                className="h-4 w-4"
+              />
+            </a>
+          </div>
           
-        
         </div>
         
         <div className="bg-secondary/50 rounded-lg p-8 border border-border/40 animate-slide-up" style={{
@@ -62,7 +89,7 @@ const Index = () => {
           <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
             <div className="flex md:contents overflow-x-auto md:overflow-visible gap-4 md:gap-0 pb-4 md:pb-0 scrollbar-hide">
               <a href="https://focusedtube.xyz/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-                <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-serif font-medium">Focusedtube</h3>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
@@ -74,10 +101,10 @@ const Index = () => {
                     ))}
                   </div>
                   
-                </div>
+            </div>
               </a>
               <a href="https://mind-reset.xyz" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-                <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-serif font-medium">Mind Reset</h3>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
@@ -89,10 +116,10 @@ const Index = () => {
                     ))}
                   </div>
                   
-                </div>
+            </div>
               </a>
               <a href="https://chat.bharat0.xyz/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-                <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-serif font-medium">Crypto Search Engine</h3>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
@@ -117,7 +144,7 @@ const Index = () => {
           <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
             <div className="flex md:contents overflow-x-auto md:overflow-visible gap-4 md:gap-0 pb-4 md:pb-0 scrollbar-hide">
             {/* <a href="https://exchange.lcx.com/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-              <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-lg font-serif font-medium">LCX</h3>
                   <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
@@ -193,10 +220,10 @@ const Index = () => {
                   <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                 </div>
                 <p className="text-muted-foreground text-sm">DeFi application offering innovative financial products and services.</p>
-              </div>
+            </div>
             </a>
             {/* <a href="https://masterdex.app/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-              <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-lg font-serif font-medium">Masterdex</h3>
                   <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
