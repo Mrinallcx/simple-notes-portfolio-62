@@ -33,7 +33,7 @@ const Index = () => {
           backgroundColor: 'rgba(185, 178, 98, 0.3)'
         }}>
             <p className="text-white text-xs font-medium px-2 py-1">
-              <strong>N.B:</strong> Do not hire me if you are looking for certified designers. I can bring only experience and knowledge on the table.
+              <strong>N.B:</strong> I bring real-world experience and knowledge over certifications.
             </p>
           </div>
           <div className="mt-2 flex items-center gap-4">
