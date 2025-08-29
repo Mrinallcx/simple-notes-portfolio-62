@@ -44,11 +44,16 @@ const Index = () => {
               aria-label="LinkedIn"
               className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-white/5 text-foreground/80"
             >
-              <img 
-                src="/linkeidn.svg" 
-                alt="LinkedIn" 
-                className="h-4 w-4"
-              />
+              <svg width="16" height="16" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clipPath="url(#clip0_2665_66918)">
+                  <path d="M511.872 512L512 511.979V324.203C512 232.341 492.224 161.579 384.832 161.579C333.205 161.579 298.56 189.909 284.416 216.768H282.923V170.155H181.099V511.979H287.125V342.72C287.125 298.155 295.573 255.061 350.763 255.061C405.141 255.061 405.952 305.92 405.952 345.579V512H511.872ZM8.448 170.176H114.603V512H8.448V170.176ZM61.4827 0C27.5413 0 0 27.5413 0 61.4827C0 95.424 27.5413 123.541 61.4827 123.541C95.424 123.541 122.965 95.424 122.965 61.4827C122.954 45.1799 116.473 29.5481 104.945 18.0203C93.4172 6.49255 77.7854 0.0113017 61.4827 0Z" fill="currentColor"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_2665_66918">
+                    <rect width="512" height="512" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
             </a>
             <a 
               href="https://x.com/yourusername" 
@@ -57,11 +62,9 @@ const Index = () => {
               aria-label="X (Twitter)"
               className="inline-flex items-center justify-center h-9 w-9 rounded-full bg-white/5 text-foreground/80"
             >
-              <img 
-                src="/x.svg" 
-                alt="X" 
-                className="h-4 w-4"
-              />
+              <svg width="16" height="16" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M303.661 216.797L490.166 0H445.971L284.028 188.242L154.686 0H5.50391L201.096 284.655L5.50391 512H49.7021L220.717 313.21L357.313 512H506.495L303.651 216.797H303.661ZM243.126 287.163L223.308 258.818L65.6274 33.2716H133.513L260.764 215.295L280.581 243.64L445.992 480.241H378.106L243.126 287.174V287.163Z" fill="currentColor"/>
+              </svg>
             </a>
           </div>
           
