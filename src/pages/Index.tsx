@@ -92,48 +92,72 @@ const Index = () => {
           <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
             <div className="flex md:contents overflow-x-auto md:overflow-visible gap-4 md:gap-0 pb-4 md:pb-0 scrollbar-hide">
               <a href="https://focusedtube.xyz/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-serif font-medium">Focusedtube</h3>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+            <div className="rounded-md border border-border/40 bg-card card-hover overflow-hidden">
+                  <div className="h-32 bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/Focusedtube.png" 
+                      alt="FocusedTube Preview" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <p className="text-muted-foreground text-sm mb-3">Distraction-free YouTube experience with enhanced focus features.</p>
-                  <div className="flex flex-wrap gap-1 mt-1">
-                    {['Lovable', 'Bolt', 'Cursor', 'Vercel'].map((tag) => (
-                      <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
-                    ))}
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-serif font-medium">Focusedtube</h3>
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                    </div>
+                    <p className="text-muted-foreground text-sm mb-3">Distraction-free YouTube experience with enhanced focus features.</p>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {['Lovable', 'Bolt', 'Cursor', 'Vercel'].map((tag) => (
+                        <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                      ))}
+                    </div>
                   </div>
-                  
             </div>
               </a>
               <a href="https://mind-reset.xyz" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-serif font-medium">Mind Reset</h3>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+            <div className="rounded-md border border-border/40 bg-card card-hover overflow-hidden">
+                  <div className="h-32 bg-gradient-to-br from-green-500/20 to-teal-500/20 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/Mindreset.png" 
+                      alt="Mind Reset Preview" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <p className="text-muted-foreground text-sm mb-3">Mental wellness app for mindfulness, meditation, and cognitive reset techniques.</p>
-                  <div className="flex flex-wrap gap-1 mt-1">
-                    {['Lovable', 'Netlify'].map((tag) => (
-                      <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
-                    ))}
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-serif font-medium">Mind Reset</h3>
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                    </div>
+                    <p className="text-muted-foreground text-sm mb-3">Mental wellness app for mindfulness, meditation, and cognitive reset techniques.</p>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {['Lovable', 'Netlify'].map((tag) => (
+                        <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                      ))}
+                    </div>
                   </div>
-                  
             </div>
               </a>
               <a href="https://chat.bharat0.xyz/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-serif font-medium">Crypto Search Engine</h3>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+            <div className="rounded-md border border-border/40 bg-card card-hover overflow-hidden">
+                  <div className="h-32 bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/Cryptosearch engine.png" 
+                      alt="Crypto Search Engine Preview" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <p className="text-muted-foreground text-sm mb-3">Specialized search engine for cryptocurrency information and market data.</p>
-                  <div className="flex flex-wrap gap-1 mt-1">
-                    {['Cursor', 'Vercel'].map((tag) => (
-                      <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
-                    ))}
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-serif font-medium">Crypto Search Engine</h3>
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                    </div>
+                    <p className="text-muted-foreground text-sm mb-3">Specialized search engine for cryptocurrency information and market data.</p>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {['Cursor', 'Vercel'].map((tag) => (
+                        <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                      ))}
+                    </div>
                   </div>
-                  
                 </div>
               </a>
             </div>
