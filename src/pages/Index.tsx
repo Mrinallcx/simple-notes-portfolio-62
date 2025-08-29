@@ -38,7 +38,7 @@ const Index = () => {
           </div>
           <div className="mt-2 flex items-center gap-4">
             <a 
-              href="https://www.linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/uxmrinal/" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -56,7 +56,7 @@ const Index = () => {
               </svg>
             </a>
             <a 
-              href="https://x.com/yourusername" 
+              href="https://x.com/builtby_mrinal" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
