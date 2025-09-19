@@ -311,10 +311,6 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                title: "Chat with Your Crypto: Voice-Activated, Multilingual UX for India’s Newest Investors",
-                desc: "India’s next billion digital users are arriving online via low-cost smartphones, patchy data, and 22 official languages. Speech AI––already powering..."
-              },
-              {
                 title: "Crypto Anxiety to Crypto Zen: Emotion-Aware UX for First-Time Investors",
                 desc: "The cryptocurrency market's extreme volatility creates a perfect storm of emotional turbulence for first-time investors. While traditional..."
               },
@@ -331,31 +327,200 @@ const Index = () => {
                 desc: "The emergence of AI-generated deepfakes represents one of the most insidious technological threats of the digital age..."
               },
               {
-                title: "Hype to Hand: How AI News Sentiment Moves Wallets Instantly",
-                desc: "The cryptocurrency trading landscape has undergone a seismic transformation as artificial intelligence systems begin intercepting..."
+                title: "Real-Time Sentiment Mining for Proactive Trading/Investing UX",
+                desc: "The convergence of artificial intelligence, real-time data processing, and behavioral psychology has created unprecedented opportunities ..."
               },
               {
-                title: "Invisible Intelligence: Will Autonomous AI Agents Make Crypto Self-Driving?",
-                desc: "AI agents are rapidly evolving from passive chatbots into on-chain copilots that execute trades, rebalance portfolios, police scams and even..."
+                title: "Regulation Blues: The Challenge of Policing Soft Porn on Instagram in India",
+                desc: "The regulation of sexually explicit content on social media platforms in India represents..."
+              },
+              {
+                title: "The \"Highlight Reel\" Effect: Showcasing Success, Hiding Struggles",
+                desc: "The digital age has created an unprecedented disconnect between online..."
+              },
+              {
+                title: "The Effectiveness of Personalized Learning Platforms in K-12 Education",
+                desc: "Personalized learning platforms represent a paradigm shift in K-12 education..."
+              },
+              {
+                title: "The Hidden System: Multi-Level Corruption, Accountability Gaps, and User Disempowerment in Gurugram's Road Maintenance",
+                desc: "Gurugram's road maintenance system represents a masterclass in institutional failure, where systemic corruption, accountability gaps, and user disempowerment create a perfect storm of public service breakdown."
+              },
+              {
+                title: "The Impact of Dark Patterns in E-Commerce on Consumer Trust and Behavior",
+                desc: "Dark patterns in e-commerce have emerged as one of the most pervasive and damaging phenomena in digital commerce, with research revealing that over 76% of websites now employ at least one deceptive design element. These manipulative user interface tactics systematically exploit..."
               },
               {
                 title: "The Influence of Personalization on User Experience in News Apps",
                 desc: "Personalized news applications have fundamentally transformed how users consume information, creating a complex..."
-              },
-              {
-                title: "Token of Inclusion: AI-Driven UX for Financial Access Among the Unbanked",
-                desc: "Financial inclusion remains a pressing global challenge: 1.4 billion adults still lack a formal account..."
               }
-            ].map((item) => (
-              <div key={item.title} className="p-6 rounded-md border border-border/40 bg-card card-hover group relative">
-                <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Coming soon</span>
-                <h3 className="text-xl font-serif font-medium mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.desc}</p>
-                <div className="mt-4 flex justify-end">
-                  <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+            ].map((item) => {
+              const isDeepfakesCase = item.title === "AI-Generated Deepfakes and Revenge Porn: The Emerging Threat";
+              const isCryptoAnxietyCase = item.title === "Crypto Anxiety to Crypto Zen: Emotion-Aware UX for First-Time Investors";
+              const isFrictionlessCase = item.title === "Frictionless Futures: Predictive Onboarding and the Vanishing Crypto UI";
+              const isKYCcase = item.title === "Frictionless KYC: Designing Instant, AI-Powered Digital Onboarding for the Unbanked";
+              const isSentimentMiningCase = item.title === "Real-Time Sentiment Mining for Proactive Trading/Investing UX";
+              const isRegulationBluesCase = item.title === "Regulation Blues: The Challenge of Policing Soft Porn on Instagram in India";
+              const isHighlightReelCase = item.title === "The \"Highlight Reel\" Effect: Showcasing Success, Hiding Struggles";
+              const isPersonalizedLearningCase = item.title === "The Effectiveness of Personalized Learning Platforms in K-12 Education";
+              const isHiddenSystemCase = item.title === "The Hidden System: Multi-Level Corruption, Accountability Gaps, and User Disempowerment in Gurugram's Road Maintenance";
+              const isDarkPatternsCase = item.title === "The Impact of Dark Patterns in E-Commerce on Consumer Trust and Behavior";
+              const isNewsPersonalizationCase = item.title === "The Influence of Personalization on User Experience in News Apps";
+              const hasLink = isDeepfakesCase || isCryptoAnxietyCase || isFrictionlessCase || isKYCcase || isSentimentMiningCase || isRegulationBluesCase || isHighlightReelCase || isPersonalizedLearningCase || isHiddenSystemCase || isDarkPatternsCase || isNewsPersonalizationCase;
+              
+              const cardContent = (
+                <div className="p-6 rounded-md border border-border/40 bg-card card-hover group relative">
+                  {!hasLink && (
+                    <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Coming soon</span>
+                  )}
+                  <h3 className="text-xl font-serif font-medium mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                  <div className="mt-4 flex justify-end">
+                    <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+
+              if (isDeepfakesCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FAI-Generated%20Deepfakes%20and%20Revenge%20Porn_%20The%20Emerg.pdf?alt=media&token=e243c6fc-8aab-4508-a317-e49fd0d6315b"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isCryptoAnxietyCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FCrypto%20Anxiety%20to%20Crypto%20Zen_%20Emotion-Aware%20UX%20for.pdf?alt=media&token=d7333ac3-67ae-4d70-95ed-7c5c6035502c"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isFrictionlessCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FFrictionless%20Futures_%20Predictive%20Onboarding%20and%20th.pdf?alt=media&token=7b8118f3-a1ae-44a2-9c78-75a959cb7326"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isKYCcase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FFrictionless%20KYC_%20Designing%20Instant%2C%20AI-Powered%20Di.pdf?alt=media&token=625268f9-89a4-4a52-8031-a5566ce5a07d"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isSentimentMiningCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FReal-Time%20Sentiment%20Mining%20for%20Proactive%20Trading_I.pdf?alt=media&token=0a5d428d-cdfd-4b98-8bb5-bb2decccec62"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isRegulationBluesCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FRegulation%20Blues_%20The%20Challenge%20of%20Policing%20Soft%20P.pdf?alt=media&token=6cea42b7-b810-4db4-a814-be5f175f2ba5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isHighlightReelCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20_Highlight%20Reel_%20Effect_%20Showcasing%20Success%2C%20H.pdf?alt=media&token=b5392a73-719f-4d14-82da-6996470d5277"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isPersonalizedLearningCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20Effectiveness%20of%20Personalized%20Learning%20Platfor.pdf?alt=media&token=4565a2ed-6ff7-492d-979a-200c1a3643d7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isHiddenSystemCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20Hidden%20System_%20Multi-Level%20Corruption%2C%20Account.pdf?alt=media&token=e6d55d7e-1ad2-43a3-9102-cdee81c95c86"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isDarkPatternsCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20Impact%20of%20Dark%20Patterns%20in%20E-Commerce%20on%20Consu.pdf?alt=media&token=13b62a7e-aa8a-4a1f-ab5e-5d56d6b0854a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else if (isNewsPersonalizationCase) {
+                return (
+                  <a 
+                    key={item.title}
+                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20Influence%20of%20Personalization%20on%20User%20Experienc.pdf?alt=media&token=9c56efff-69c9-4e83-848d-76c277c4bdfc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              } else {
+                return (
+                  <div key={item.title}>
+                    {cardContent}
+          </div>
+                );
+              }
+            })}
           </div>
         </div>
         

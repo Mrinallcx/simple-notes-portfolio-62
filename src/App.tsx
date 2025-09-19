@@ -12,6 +12,7 @@ import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import GlassNavbar from "@/components/GlassNavbar";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const queryClient = new QueryClient();
 
@@ -21,17 +22,19 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            {/* <Route path="/blog" element={<Blog />} />
-            <Route path="/notes" element={<Notes />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume />} /> */}
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <SmoothScroll>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              {/* <Route path="/blog" element={<Blog />} />
+              <Route path="/notes" element={<Notes />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} /> */}
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </SmoothScroll>
         <GlassNavbar />
       </TooltipProvider>
     </QueryClientProvider>
