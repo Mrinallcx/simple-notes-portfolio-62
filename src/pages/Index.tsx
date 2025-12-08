@@ -160,6 +160,25 @@ const Index = () => {
                   </div>
                 </div>
               </a>
+              <a href="https://payme-your-simple-payment-hub.vercel.app/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
+            <div className="rounded-md border border-border/40 bg-card card-hover overflow-hidden">
+                  <div className="h-32 bg-gradient-to-br from-blue-500/20 to-indigo-500/20 flex items-center justify-center overflow-hidden">
+                    <div className="text-4xl font-bold text-blue-400/60">Payme</div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-serif font-medium">Payme</h3>
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                    </div>
+                    <p className="text-muted-foreground text-sm mb-3">Peer-to-peer payment gateway based on x402 protocol. Developed using AI only.</p>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {['AI', 'Cursor', 'Vercel', 'x402'].map((tag) => (
+                        <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -170,15 +189,16 @@ const Index = () => {
                     <h2 className="text-2xl font-serif font-medium mb-6">Live Projects</h2>
           <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
             <div className="flex md:contents overflow-x-auto md:overflow-visible gap-4 md:gap-0 pb-4 md:pb-0 scrollbar-hide">
-            {/* <a href="https://exchange.lcx.com/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
+            <a href="https://exchange.lcx.com/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
+              <div className="p-6 pb-14 rounded-md border border-border/40 bg-card card-hover relative">
+                <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Corporate</span>
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-lg font-serif font-medium">LCX</h3>
                   <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                 </div>
                 <p className="text-muted-foreground text-sm">Cryptocurrency exchange platform with advanced trading features and security.</p>
               </div>
-            </a> */}
+            </a>
             <a href="https://app.tiamonds.com/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
               <div className="p-6 pb-14 rounded-md border border-border/40 bg-card card-hover relative">
                 <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Corporate</span>
@@ -209,16 +229,6 @@ const Index = () => {
                 <p className="text-muted-foreground text-sm">Web3 infrastructure platform for seamless blockchain integration.</p>
               </div>
             </a>
-            <a href="https://decent.xyz/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-              <div className="p-6 pb-14 rounded-md border border-border/40 bg-card card-hover relative">
-                <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Agency</span>
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-lg font-serif font-medium">Decent</h3>
-                  <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
-                </div>
-                <p className="text-muted-foreground text-sm">Decentralized platform for creators and digital content monetization.</p>
-              </div>
-            </a>
             <a href="https://manimama.exchange/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
               <div className="p-6 pb-14 rounded-md border border-border/40 bg-card card-hover relative">
                 <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Corporate</span>
@@ -229,35 +239,16 @@ const Index = () => {
                 <p className="text-muted-foreground text-sm">Cryptocurrency exchange with user-friendly interface and trading tools.</p>
               </div>
             </a>
-            <a href="https://www.spherium.finance/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
+            <a href="https://masterdex.xyz/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
               <div className="p-6 pb-14 rounded-md border border-border/40 bg-card card-hover relative">
                 <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Agency</span>
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-lg font-serif font-medium">Spherium Finance</h3>
-                  <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
-                </div>
-                <p className="text-muted-foreground text-sm">Cross-chain DeFi platform for lending, borrowing, and yield optimization.</p>
-              </div>
-            </a>
-            <a href="https://www.magpiefi.xyz/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-              <div className="p-6 pb-14 rounded-md border border-border/40 bg-card card-hover relative">
-                <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Agency</span>
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-lg font-serif font-medium">Magpie Dapp</h3>
-                  <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
-                </div>
-                <p className="text-muted-foreground text-sm">DeFi application offering innovative financial products and services.</p>
-            </div>
-            </a>
-            {/* <a href="https://masterdex.app/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
-            <div className="p-6 rounded-md border border-border/40 bg-card card-hover">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-lg font-serif font-medium">Masterdex</h3>
                   <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
                 </div>
                 <p className="text-muted-foreground text-sm">Decentralized exchange platform for seamless crypto trading.</p>
               </div>
-            </a> */}
+            </a>
             </div>
           </div>
         </div>
@@ -311,68 +302,17 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                title: "Crypto Anxiety to Crypto Zen: Emotion-Aware UX for First-Time Investors",
-                desc: "The cryptocurrency market's extreme volatility creates a perfect storm of emotional turbulence for first-time investors. While traditional..."
-              },
-              {
-                title: "Frictionless Futures: Predictive Onboarding and the Vanishing Crypto UI",
-                desc: "Over the next decade, a decisive share of Web3 adoption will be won or lost in the first 60 seconds of a user’s journey. Modern wallets..."
-              },
-              {
-                title: "Frictionless KYC: Designing Instant, AI-Powered Digital Onboarding for the Unbanked",
-                desc: "More than 1.3 billion adults worldwide remain outside the formal financial system despite recordhigh account ownership..."
-              },
-              {
-                title: "AI-Generated Deepfakes and Revenge Porn: The Emerging Threat",
-                desc: "The emergence of AI-generated deepfakes represents one of the most insidious technological threats of the digital age..."
-              },
-              {
                 title: "Real-Time Sentiment Mining for Proactive Trading/Investing UX",
                 desc: "The convergence of artificial intelligence, real-time data processing, and behavioral psychology has created unprecedented opportunities ..."
               },
               {
-                title: "Regulation Blues: The Challenge of Policing Soft Porn on Instagram in India",
-                desc: "The regulation of sexually explicit content on social media platforms in India represents..."
-              },
-              {
-                title: "The \"Highlight Reel\" Effect: Showcasing Success, Hiding Struggles",
-                desc: "The digital age has created an unprecedented disconnect between online..."
-              },
-              {
-                title: "The Effectiveness of Personalized Learning Platforms in K-12 Education",
-                desc: "Personalized learning platforms represent a paradigm shift in K-12 education..."
-              },
-              {
-                title: "The Hidden System: Multi-Level Corruption, Accountability Gaps, and User Disempowerment in Gurugram's Road Maintenance",
-                desc: "Gurugram's road maintenance system represents a masterclass in institutional failure, where systemic corruption, accountability gaps, and user disempowerment create a perfect storm of public service breakdown."
-              },
-              {
-                title: "The Impact of Dark Patterns in E-Commerce on Consumer Trust and Behavior",
-                desc: "Dark patterns in e-commerce have emerged as one of the most pervasive and damaging phenomena in digital commerce, with research revealing that over 76% of websites now employ at least one deceptive design element. These manipulative user interface tactics systematically exploit..."
-              },
-              {
-                title: "The Influence of Personalization on User Experience in News Apps",
-                desc: "Personalized news applications have fundamentally transformed how users consume information, creating a complex..."
+                title: "The Impact of Dark Patterns in E-Commerce on Consumer",
+                desc: "Research reveals that over 76% of websites employ deceptive design elements that manipulate user behavior and erode consumer trust in e-commerce."
               }
             ].map((item) => {
-              const isDeepfakesCase = item.title === "AI-Generated Deepfakes and Revenge Porn: The Emerging Threat";
-              const isCryptoAnxietyCase = item.title === "Crypto Anxiety to Crypto Zen: Emotion-Aware UX for First-Time Investors";
-              const isFrictionlessCase = item.title === "Frictionless Futures: Predictive Onboarding and the Vanishing Crypto UI";
-              const isKYCcase = item.title === "Frictionless KYC: Designing Instant, AI-Powered Digital Onboarding for the Unbanked";
-              const isSentimentMiningCase = item.title === "Real-Time Sentiment Mining for Proactive Trading/Investing UX";
-              const isRegulationBluesCase = item.title === "Regulation Blues: The Challenge of Policing Soft Porn on Instagram in India";
-              const isHighlightReelCase = item.title === "The \"Highlight Reel\" Effect: Showcasing Success, Hiding Struggles";
-              const isPersonalizedLearningCase = item.title === "The Effectiveness of Personalized Learning Platforms in K-12 Education";
-              const isHiddenSystemCase = item.title === "The Hidden System: Multi-Level Corruption, Accountability Gaps, and User Disempowerment in Gurugram's Road Maintenance";
-              const isDarkPatternsCase = item.title === "The Impact of Dark Patterns in E-Commerce on Consumer Trust and Behavior";
-              const isNewsPersonalizationCase = item.title === "The Influence of Personalization on User Experience in News Apps";
-              const hasLink = isDeepfakesCase || isCryptoAnxietyCase || isFrictionlessCase || isKYCcase || isSentimentMiningCase || isRegulationBluesCase || isHighlightReelCase || isPersonalizedLearningCase || isHiddenSystemCase || isDarkPatternsCase || isNewsPersonalizationCase;
-              
               const cardContent = (
                 <div className="p-6 rounded-md border border-border/40 bg-card card-hover group relative">
-                  {!hasLink && (
-                    <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Coming soon</span>
-                  )}
+                  <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Coming soon</span>
                   <h3 className="text-xl font-serif font-medium mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-sm">{item.desc}</p>
                   <div className="mt-4 flex justify-end">
@@ -381,145 +321,11 @@ const Index = () => {
                 </div>
               );
 
-              if (isDeepfakesCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FAI-Generated%20Deepfakes%20and%20Revenge%20Porn_%20The%20Emerg.pdf?alt=media&token=e243c6fc-8aab-4508-a317-e49fd0d6315b"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isCryptoAnxietyCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FCrypto%20Anxiety%20to%20Crypto%20Zen_%20Emotion-Aware%20UX%20for.pdf?alt=media&token=d7333ac3-67ae-4d70-95ed-7c5c6035502c"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isFrictionlessCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FFrictionless%20Futures_%20Predictive%20Onboarding%20and%20th.pdf?alt=media&token=7b8118f3-a1ae-44a2-9c78-75a959cb7326"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isKYCcase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FFrictionless%20KYC_%20Designing%20Instant%2C%20AI-Powered%20Di.pdf?alt=media&token=625268f9-89a4-4a52-8031-a5566ce5a07d"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isSentimentMiningCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FReal-Time%20Sentiment%20Mining%20for%20Proactive%20Trading_I.pdf?alt=media&token=0a5d428d-cdfd-4b98-8bb5-bb2decccec62"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isRegulationBluesCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FRegulation%20Blues_%20The%20Challenge%20of%20Policing%20Soft%20P.pdf?alt=media&token=6cea42b7-b810-4db4-a814-be5f175f2ba5"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isHighlightReelCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20_Highlight%20Reel_%20Effect_%20Showcasing%20Success%2C%20H.pdf?alt=media&token=b5392a73-719f-4d14-82da-6996470d5277"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isPersonalizedLearningCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20Effectiveness%20of%20Personalized%20Learning%20Platfor.pdf?alt=media&token=4565a2ed-6ff7-492d-979a-200c1a3643d7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isHiddenSystemCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20Hidden%20System_%20Multi-Level%20Corruption%2C%20Account.pdf?alt=media&token=e6d55d7e-1ad2-43a3-9102-cdee81c95c86"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isDarkPatternsCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20Impact%20of%20Dark%20Patterns%20in%20E-Commerce%20on%20Consu.pdf?alt=media&token=13b62a7e-aa8a-4a1f-ab5e-5d56d6b0854a"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else if (isNewsPersonalizationCase) {
-                return (
-                  <a 
-                    key={item.title}
-                    href="https://firebasestorage.googleapis.com/v0/b/tiamonds.firebasestorage.app/o/case%20study%2FThe%20Influence%20of%20Personalization%20on%20User%20Experienc.pdf?alt=media&token=9c56efff-69c9-4e83-848d-76c277c4bdfc"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              } else {
-                return (
-                  <div key={item.title}>
-                    {cardContent}
-          </div>
-                );
-              }
+              return (
+                <div key={item.title}>
+                  {cardContent}
+                </div>
+              );
             })}
           </div>
         </div>
