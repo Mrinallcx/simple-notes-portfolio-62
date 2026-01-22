@@ -11,7 +11,6 @@ import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import GlassNavbar from "@/components/GlassNavbar";
 import SmoothScroll from "@/components/SmoothScroll";
 
 const queryClient = new QueryClient();
@@ -35,7 +34,6 @@ const App = () => (
             </Routes>
           </BrowserRouter>
         </SmoothScroll>
-        <GlassNavbar />
       </TooltipProvider>
     </QueryClientProvider>
   </ThemeProvider>
