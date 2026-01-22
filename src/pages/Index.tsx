@@ -24,8 +24,8 @@ const Index = () => {
             UX Designer @LCX | Web3.0 | 5 Years of Product Design | Applied AI Engineer
           </p>
           <p className="text-sm text-[#a0a0a0] mt-4 animate-slide-down" style={{ animationDelay: '320ms' }}>
-            Call: <a href="tel:+918811837252" className="hover:text-purple-500 transition-colors duration-200">+91 8811837252</a><br />
-            Email: <a href="mailto:mrinal@mrinalchakraborty.in" className="hover:text-purple-500 transition-colors duration-200">mrinal@mrinalchakraborty.in</a>
+            Call: <a href="tel:+918811837252" className="hover:text-amber-500 transition-colors duration-200">+91 8811837252</a><br />
+            Email: <a href="mailto:mrinal@mrinalchakraborty.in" className="hover:text-amber-500 transition-colors duration-200">mrinal@mrinalchakraborty.in</a>
           </p>
           
           <div className="mt-6 inline-block border-l-4 border-yellow-500 rounded-r-md animate-slide-down" style={{
@@ -93,7 +93,7 @@ const Index = () => {
             <div className="flex md:contents overflow-x-auto md:overflow-visible gap-4 md:gap-0 pb-4 md:pb-0 scrollbar-hide">
               <a href="https://focusedtube.xyz/" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-80 md:w-auto">
             <div className="rounded-md border border-border/40 bg-card card-hover overflow-hidden">
-                  <div className="h-32 bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center overflow-hidden">
+                  <div className="h-32 bg-gradient-to-br from-amber-500/20 to-blue-500/20 flex items-center justify-center overflow-hidden">
                     <img 
                       src="/Focusedtube.png" 
                       alt="FocusedTube Preview" 
