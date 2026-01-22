@@ -184,6 +184,64 @@ const Index = () => {
         </div>
         
         <div className="pt-8 animate-slide-up" style={{
+        animationDelay: '445ms'
+      }}>
+          <h2 className="text-2xl font-serif font-medium mb-6">Custom GPT</h2>
+          <div className="md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-4">
+            <div className="flex md:contents overflow-x-auto md:overflow-visible gap-3 md:gap-0 pb-4 md:pb-0 scrollbar-hide">
+              <a href="https://chatgpt.com/g/g-69721ed3b52881919d82b02d7db8f342-bharatx" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-64 md:w-auto">
+                <div className="rounded-md border border-border/40 bg-card card-hover overflow-hidden">
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <h3 className="text-base font-serif font-medium">BharatX</h3>
+                      <ArrowRight className="h-3.5 w-3.5 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                    </div>
+                    <p className="text-muted-foreground text-xs mb-2">A finance only AI for data driven market analysis and future predictoin across markets.</p>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {['Finance', 'Chatgpt'].map((tag) => (
+                        <span key={tag} className="text-[9px] px-1.5 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://chatgpt.com/g/g-69722926302081919d617882ee4fa36f-bharatx-senior-ux-researcher" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-64 md:w-auto">
+                <div className="rounded-md border border-border/40 bg-card card-hover overflow-hidden">
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <h3 className="text-base font-serif font-medium">UX Researcher</h3>
+                      <ArrowRight className="h-3.5 w-3.5 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                    </div>
+                    <p className="text-muted-foreground text-xs mb-2">A senior UX researcher GPT for writing clear, research based, portfolio ready UX case studies.</p>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {['Design', 'UX', 'Chatgpt'].map((tag) => (
+                        <span key={tag} className="text-[9px] px-1.5 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://chatgpt.com/g/g-69722e919e18819191212b461610609d-bharatx-prompt-engineer" target="_blank" rel="noopener noreferrer" className="block group flex-shrink-0 md:flex-shrink w-64 md:w-auto">
+                <div className="rounded-md border border-border/40 bg-card card-hover overflow-hidden">
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <h3 className="text-base font-serif font-medium">Prompt Engineer</h3>
+                      <ArrowRight className="h-3.5 w-3.5 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                    </div>
+                    <p className="text-muted-foreground text-xs mb-2">I create precise, structured image prompts optimized for Nano Banana, ensuring clarity and visual accuracy.</p>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {['Design', 'Image', 'Chatgpt'].map((tag) => (
+                        <span key={tag} className="text-[9px] px-1.5 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div className="pt-8 animate-slide-up" style={{
         animationDelay: '450ms'
       }}>
                     <h2 className="text-2xl font-serif font-medium mb-6">Live Projects</h2>
@@ -307,12 +365,15 @@ const Index = () => {
               },
               {
                 title: "The Impact of Dark Patterns in E-Commerce on Consumer",
-                desc: "Research reveals that over 76% of websites employ deceptive design elements that manipulate user behavior and erode consumer trust in e-commerce."
+                desc: "Research reveals that over 76% of websites employ deceptive design elements that manipulate user behavior and erode consumer trust in e-commerce.",
+                url: "https://drive.google.com/file/d/1l1Nf75gzqyORcAKGH7B6nbqDMsRP27ZG/view?usp=drive_link"
               }
             ].map((item) => {
               const cardContent = (
                 <div className="p-6 rounded-md border border-border/40 bg-card card-hover group relative">
-                  <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Coming soon</span>
+                  {!item.url && (
+                    <span className="absolute bottom-4 left-4 text-[10px] px-2 py-0.5 rounded-full border border-border/60 bg-secondary/40 text-foreground/70">Coming soon</span>
+                  )}
                   <h3 className="text-xl font-serif font-medium mb-2">{item.title}</h3>
                   <p className="text-muted-foreground text-sm">{item.desc}</p>
                   <div className="mt-4 flex justify-end">
@@ -323,7 +384,13 @@ const Index = () => {
 
               return (
                 <div key={item.title}>
-                  {cardContent}
+                  {item.url ? (
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                      {cardContent}
+                    </a>
+                  ) : (
+                    cardContent
+                  )}
                 </div>
               );
             })}

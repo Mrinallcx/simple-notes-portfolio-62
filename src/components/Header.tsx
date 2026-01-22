@@ -43,7 +43,7 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex items-center">
           <ul className="flex items-center space-x-6">
             <li>
-              <a href="https://docs.google.com/document/d/1k6pBPlRN--iY7Ba2_yT1RqCYx_p9ybw79A4zzCA1m_o/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-2 border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 text-sm">
+              <a href="https://drive.google.com/file/d/1m6C3y6e1jyAwRxkzgy26WKGKowrJtkk6/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-2 border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 text-sm">
                 Resume
               </a>
             </li>
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
 
         {/* Mobile CTA Button */}
         <div className="md:hidden">
-          <a href="https://docs.google.com/document/d/1k6pBPlRN--iY7Ba2_yT1RqCYx_p9ybw79A4zzCA1m_o/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-2 border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 text-sm">
+          <a href="https://drive.google.com/file/d/1m6C3y6e1jyAwRxkzgy26WKGKowrJtkk6/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-2 border-purple-500 hover:bg-purple-500 text-purple-500 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 text-sm">
             Resume
           </a>
         </div>
