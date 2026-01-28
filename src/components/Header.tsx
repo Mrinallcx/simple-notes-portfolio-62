@@ -43,6 +43,16 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex items-center">
           <ul className="flex items-center space-x-6">
             <li>
+              <Link 
+                to="/blog" 
+                className={`text-sm transition-colors duration-200 hover:text-foreground ${
+                  isActive("/blog") ? "text-foreground font-medium" : "text-muted-foreground"
+                }`}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
               <a href="https://drive.google.com/file/d/1m6C3y6e1jyAwRxkzgy26WKGKowrJtkk6/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-2 border-amber-500 hover:bg-amber-500 text-amber-500 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 text-sm">
                 Resume
               </a>
@@ -50,8 +60,16 @@ const Header: React.FC = () => {
           </ul>
         </nav>
 
-        {/* Mobile CTA Button */}
-        <div className="md:hidden">
+        {/* Mobile Navigation */}
+        <div className="md:hidden flex items-center space-x-4">
+          <Link 
+            to="/blog" 
+            className={`text-sm transition-colors duration-200 hover:text-foreground ${
+              isActive("/blog") ? "text-foreground font-medium" : "text-muted-foreground"
+            }`}
+          >
+            Blog
+          </Link>
           <a href="https://drive.google.com/file/d/1m6C3y6e1jyAwRxkzgy26WKGKowrJtkk6/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="border-2 border-amber-500 hover:bg-amber-500 text-amber-500 hover:text-white px-3 py-1.5 rounded-full transition-all duration-200 text-sm">
             Resume
           </a>
